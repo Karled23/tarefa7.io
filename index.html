@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ação</a>
+                    <a class="dropdown-item" href="#">Outra ação</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Algo mais aqui</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </nav>
+
+        <div class="item">Produtos</div>
+        <div class="item">Clientes</div>
+        <div class="item">Contato</div>
+
+    </header>
+
+    <div class="container">
+
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="carNome">Modelo</label>
+                <input type="text" class="form-control" id="carNome" placeholder="Nome" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="carCor">Cor</label>
+                <select class="form-control"        id="carCor" required>
+                  <option value="" disabled selected>Selecione a Cor...</option>
+                  <option value="Vermelho">Vermelho</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Verde">Verde</option>
+                  </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="carMarca">Marca</label>
+                <input type="text" class="form-control" id="carMarca" placeholder="Marca" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="carCambio">Câmbio</label>
+                <select class="form-control" id="carCambio" required>
+                  <option value="" disabled selected>Selecione...</option>
+                  <option>Manual</option>
+                  <option>Automático</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="carAno">Ano de Fabricação</label>
+                <input type="text" class="form-control" id="carAno" placeholder="Ano" required>
+              </div>
+            </div>
+        
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="carValor">Valor</label>
+                <input type="text" class="form-control" id="carValor" placeholder="Valor" required>
+              </div>
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+
+    </div>
+
+    <div class="footer">Footer</div>
+    
+</body>
+</html>
